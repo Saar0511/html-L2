@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="UTF-8">
-
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()"
+method="post">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -128,13 +129,26 @@
             <option value="Ẕur Moshe">Ẕur Moshe</option>
         </select>
     </div>
+<div>
+<input type="checkbox" id="vihecles" name="vehicle1" value="Bike">
+<label for="vehicle1">Bike</label>
+<input type="checkbox" id="vihecles" name="vehicle1" value="Bike">
+<label for="vehicle1">car</label>
+<input type="checkbox" id="vihecles" name="vehicle1" value="Bike">
+<label for="vehicle1">Boat</label>
+</div>
+
+<div>
+<label for="colorpicker">Color Picker:</label>
+   <input type="color" id="colorpicker" value="#0000ff">
+</div>
 
 
+   <input type="date" id="start" name="trip-start"
+   value="2018-07-22"
+   min="2018-01-01" max="2018-12-31">
 
-
-
-
-
+   
     <br>
     <br>
     <br>
@@ -149,7 +163,8 @@
 
 
     <div>
-
+        <input type="submit">
+        <input type="reset">
         <input>
         <button>press</button>
 
@@ -157,6 +172,6 @@
 </body>
 
 
-
+</form>
 
 </html>
